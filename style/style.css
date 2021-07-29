@@ -1,0 +1,126 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(102, 102, 102);
+    user-select: none;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 10px;
+    background-color: #212121; 
+    border-radius: 10px;
+    max-width: 450px;
+    font-family: "Calibri";
+    padding: 15px;
+}
+.colums{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.item {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #000;
+    width: 40px;
+    height: 40px;
+    transition: .4s;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7c01;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-family: arial;
+    font-size: 23px;
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: .4s;
+}
+.input {
+    overflow: hidden;
+    color: #fff;
+    min-height: 60px;
+    height: auto;
+    padding: 5px 20px;
+    grid-column: 1/-1;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: text;
+    user-select: text;
+    justify-content: flex-end;
+    border-bottom: 2px solid white;
+}
+.upper {
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: -20px;
+}
+.clean, .back, .percent, .divide, .mul, .sub, .add {
+    color: #ff7c01;
+}
+.hidden{
+    display: none;
+    transition: 1s;
+}
+.equal { 
+    background-color: #ff7c01;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.item:hover {
+    box-shadow: 0 0 8px 4px rgb(56, 56, 56);
+}
+.equal:hover{
+    box-shadow: 0 0 1px 6px #ffbe81;
+}
+.show:hover{
+    box-shadow: 0 0 1px 6px #ffbe81;
+}
+@media (max-width: 500px) {
+    body{
+        background: #212121;
+    }
+    .container{
+        grid-column-gap: 15px;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .item{
+        cursor: default;
+    }
+}
+@media (max-width: 370px) {
+    .container{
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+    .input{
+        min-height: 150px;
+    }
+    .item{
+        width: 30px;
+        height: 30px;
+    }
+    .show{
+        width: 30px;
+        height: 30px;
+    }
+}

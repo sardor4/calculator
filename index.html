@@ -3,205 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Работа с JQuery</title>
-
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/main.css">
-
-
+    <link rel="stylesheet" href="style/style.css">
+    <title>Калькулятор</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="input">0</div>
 
-    <header class="bg-dark text-white" id="header">
-        <div class="container text-center">
-            <h1>Header Title</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
+        
+        <hide class="hidden">
+            <div class="item" onclick="f('sin')">sin</div>
+        </hide>
+        <hide class="hidden">
+            <div class="item" onclick="f('cos')">cos</div>
+        </hide>
+        <hide class="hidden">
+            <div class="item" onclick="f('tan')">tan</div>
+        </hide>
+        <hide class="hidden">
+            <div class="item" onclick="f('ctg')">ctg</div>
+        </hide>
 
-        <nav class="nav bg-danger">
-            <div class="container">
-                <ul class="row align-items-center">
-                    <li class="col-auto">
-                        <a class="js-sroll-to-id" href="#features">Features</a>
-                    </li>
-                    <li class="col-auto">
-                        <a class="js-sroll-to-id" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="col-auto">
-                        <a class="js-sroll-to-id" href="#about" data-tooltip="About Us">About Us</a>
-                    </li>
-                    <li class="col-auto ml-auto">
-                        <a href="#!" class="btn btn-dark js-modal-show" data-tooltip="Модальное окно">
-                            Login
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <section id="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="row justify-content-center">
-                <div class="col-6">
-
-                    <!-- Аккордеон -->
-                    <nav class="faq">
-                        <a href="https://google.com" class="ask">Вопрос №1</a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, eaque.
-                        </div>
-
-                        <a href="#!" class="ask">Вопрос №2</a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, eaque.
-                        </div>
-
-                        <a href="#!" class="ask">Вопрос №3</a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, eaque.
-                        </div>
-
-                        <a href="#!" class="ask">Вопрос №4</a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, eaque.
-                        </div>
-
-                        <a href="#!" class="ask">Вопрос №5</a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, eaque.
-                        </div>
-                        <a href="#!" class="ask">Вопрос №6</a>
-                        <div class="answer">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, eaque.
-                        </div>
-                    </nav>
+        <hide class="hidden">
+            <div class="item" onclick="operation('^')">x<span class="upper">y</span></div>
+        </hide>
+        <hide class="hidden">
+            <div class="item" onclick="log('lg')">lg</div>
+        </hide>
+        <hide class="hidden">
+            <div class="item" onclick="log('ln')">ln</div>
+        </hide>
+        <hide class="hidden">
+            <div class="item" onclick="insert('(')">(</div>
+        </hide>
+        <hide class="hidden">
+            <div class="item" onclick="insert(')')">)</div>
+        </hide>
 
 
-                </div>
-            </div>
-        </div>
-    </section>
+        <hide class="hidden"><div class="item" onclick="operation('sqr')">x<span class="upper">2</span></div></hide>
+        <div class="item clean" onclick="clean()">C</div>
+        <div class="item back" onclick="back()">&lArr;</div>
+        <div class="item percent" onclick="percent()">%</div>
+        <div class="item divide" onclick="insert('/')">&divide;</div>
 
-    <section id="pricing">
-        <div class="container">
-            <h2>Pricing</h2>
-            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum libero eius ipsum beatae
-                laborum! Labore consequatur
-                nihil voluptatibus a voluptates ipsam velit inventore, quaerat debitis animi tempora et aliquid, nulla
-                odit
-                omnis ipsum maxime consectetur exercitationem assumenda minima beatae aut laudantium at. Eligendi,
-                inventore.
-                Recusandae temporibus adipisci odit, assumenda vitae harum quas quia, obcaecati distinctio in quasi
-                itaque
-                dicta ad tenetur. Minus eaque vero fugiat nisi laboriosam commodi fuga quas totam! Fugit excepturi quasi
-                aliquam voluptate veniam earum odio vero eos eum! Iste distinctio et sunt maxime mollitia obcaecati quia
-                tenetur modi doloremque eum! Repellendus fuga minima eaque magnam corporis architecto quasi sit quo?
-                Quos,
-                ea, expedita sed molestias voluptatibus, magni animi omnis harum dolore quas facilis eos repellat maxime
-                alias voluptas sapiente sunt vitae quis quisquam temporibus obcaecati eligendi ex. Sapiente, similique
-                non
-                quibusdam, esse minima ipsa provident atque ipsum cum, excepturi rerum maxime pariatur
-                <span class="text-hidden hidden">est. Dicta delectus ullam odit eveniet earum. Fugit atque sequi rem
-                    earum ab fuga animi, cupiditate laudantium
-                    reprehenderit error debitis aut dolore sapiente dolores deleniti laboriosam dolorem vitae adipisci
-                    possimus
-                    quas est quae non sunt. Magni et voluptate facere, tempora suscipit molestias veniam in
-                    exercitationem,
-                    aliquid, cupiditate vero minus itaque corporis nobis? Atque debitis iusto, sapiente velit architecto
-                    eum dignissimos quidem, inventore nam, dolorum repellat? Facilis asperiores, fugiat iusto velit
-                    perspiciatis
-                    deleniti aperiam adipisci sapiente nam illum quisquam rerum voluptatem vel optio provident culpa ut
-                    beatae
-                    libero dignissimos mollitia. Perferendis, sed expedita ab sint cumque autem itaque, nemo voluptate
-                    eligendi
-                    neque eius aperiam explicabo, error similique voluptatem obcaecati esse! Ipsam explicabo, quam
-                    aliquid
-                    consectetur ullam ratione eum quibusdam quae in recusandae fugiat magni impedit libero, nihil
-                    doloribus
-                    reprehenderit delectus voluptate, quos ut sed.!</span>
-                <a href="#!" class="read-more">
-                    Read More
-                </a>
-            </p>
-        </div>
-    </section>
+        <hide class="hidden"><div class="item" onclick="operation('^-1')">x<span class="upper">-1</span></div></hide>
+        <div class="item" onclick="insert('7')">7</div>
+        <div class="item" onclick="insert('8')">8</div>
+        <div class="item" onclick="insert('9')">9</div>
+        <div class="item mul" onclick="insert('*')">&times;</div>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="py-5">
-                <!-- Установить data-filter с названием класса -->
-                <button class="js-filter btn btn-primary" data-filter="primary">Primary</button>
-                <button class="js-filter btn btn-success" data-filter="success">Success</button>
-                <button class="js-filter btn btn-danger" data-filter="danger">Danger</button>
-                <button class="js-filter btn btn-dark" data-filter="all">All</button>
-            </div>
-            <!-- Установить data-filter с названием класса -->
-            <div class="js-filter-card bg-primary" data-filter="primary">1</div>
-            <div class="js-filter-card bg-primary" data-filter="primary">2</div>
-            <div class="js-filter-card bg-success" data-filter="success">3</div>
-            <div class="js-filter-card bg-primary" data-filter="primary">4</div>
-            <div class="js-filter-card bg-danger" data-filter="danger">5</div>
-            <div class="js-filter-card bg-success" data-filter="success">6</div>
-            <div class="js-filter-card bg-danger" data-filter="danger">7</div>
-            <div class="js-filter-card bg-success" data-filter="success">8</div>
-        </div>
-    </section>
-    
-    <footer class="py-5 bg-dark text-white text-center">
-        <div class="container">
-            Footer
-        </div>
-    </footer>
+        <hide class="hidden"><div class="item" onclick="operation('sqrt')">&radic;x</div></hide>
+        <div class="item" onclick="insert('4')">4</div>
+        <div class="item" onclick="insert('5')">5</div>
+        <div class="item" onclick="insert('6')">6</div>
+        <div class="item sub" onclick="insert('-')">-</div>
 
+        <hide class="hidden"><div class="item" onclick="fact()">x!</div></hide>
+        <div class="item" onclick="insert('1')">1</div>
+        <div class="item" onclick="insert('2')">2</div>
+        <div class="item" onclick="insert('3')">3</div>
+        <div class="item add" onclick="insert('+')">+</div>
 
-
-    <!-- Components -->
-
-    <!-- To top -->
-    <a href="#header" class="btn btn-danger btn-lg js-btn-top hidden">
-        &uarr;
-    </a>
-    <!-- To top end -->
-
-
-
-    <!-- Modal -->
-    <div class="modal">
-        <div class="modal-dialog shadow-lg">
-            <div class="modal-content">
-                <form>
-                    <div class="modal-header">
-                        <h5 class="modal-title">Login</h5>
-                        <button type="button" class="close">
-                            &times;
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+        <hide class="hidden"><div class="item" onclick="constant('pi')">&prod;</div></hide>
+        <div class="show">more</div>
+        <hide class="hidden"><div class="item" onclick="constant('e')">e</div></hide>
+        <div class="item zero" onclick="insert('0')">0</div>
+        <div class="item" onclick="insert('.')">,</div>
+        <div class="item equal" onclick="equal()">=</div>
     </div>
-    <!-- Modal end  -->
-    <script src="javascript/jquery.js"></script>
-    <script src="javascript/main.js"></script>
+
+    <div id="add"></div>
+
+    <script src="script/jquery.min.js"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
